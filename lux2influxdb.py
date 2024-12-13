@@ -38,22 +38,20 @@ def on_message(client: paho.Client, userdata: Any, msg: paho.MQTTMessage) -> Non
 
         # Iterate through all keys in the payload
         for key, value in payload["payload"].items():
-            # Convert key to match metrics dictionary
-            metric_key: str = key
-            if metric_key in METRICS:
+            if key in METRICS:
                 try:
                     # Convert value to float
                     metric_value: float = float(value)
 
                     # Create InfluxDB point with Point class
                     point: Point = (
-                        Point(f"lux_{metric_key}")
+                        Point(f"lux_{key}")
                         .tag("dongle", DONGLE)
                         .field("value", metric_value)
                     )
 
                     points.append(point)
-                    sent.append({metric_key: metric_value})
+                    sent.append({key: metric_value})
                 except (ValueError, TypeError) as e:
                     print(f"Failed to convert value for metric {key}: {e}")
 
