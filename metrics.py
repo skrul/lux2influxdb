@@ -39,4 +39,56 @@ METRICS = {
         "type": "gauge",
         "unit": None,
     },
+    "Epv1_day": {
+        "type": "gauge",
+        "unit": None,
+    },
+    "Epv2_day": {
+        "type": "gauge",
+        "unit": None,
+    },
+    "Epv3_day": {
+        "type": "gauge",
+        "unit": None,
+    },
+    "Epv_all": {
+        "type": "gauge",
+        "unit": None,
+    },
+    "Einv_day": {
+        "type": "gauge",
+        "unit": None,
+    },
+    "Erec_day": {
+        "type": "gauge",
+        "unit": None,
+    },
+    "Echg_day": {
+        "type": "gauge",
+        "unit": None,
+    },
+    "Edischg_day": {
+        "type": "gauge",
+        "unit": None,
+    },
+    "Eeps_day": {
+        "type": "gauge",
+        "unit": None,
+    },
+    "Etogrid_day": {
+        "type": "gauge",
+        "unit": None,
+    },
+    "Etouser_day": {
+        "type": "gauge",
+        "unit": None,
+    },
+    "Edischg_day": {
+        "type": "gauge",
+        "unit": None,
+    },
+    "Edischg_day": {
+        "type": "gauge",
+        "unit": None,
+    },
 }
