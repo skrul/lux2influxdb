@@ -91,4 +91,12 @@ METRICS = {
         "type": "gauge",
         "unit": None,
     },
+    "HourlyConsumption": {
+        "type": "gauge",
+        "unit": None,
+    },
+    "DailyConsumption": {
+        "type": "gauge",
+        "unit": None,
+    },
 }
