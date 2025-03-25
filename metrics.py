@@ -107,4 +107,12 @@ METRICS = {
     "VepsT": {
         "type": "gauge",
     },
+    "HourlyConsumption": {
+        "type": "gauge",
+        "unit": None,
+    },
+    "DailyConsumption": {
+        "type": "gauge",
+        "unit": None,
+    },
 }
