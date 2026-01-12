@@ -26,6 +26,9 @@ METRICS = {
     "Pdischarge": {
         "type": "gauge",
     },
+    "Peps": {
+        "type": "gauge",
+    },
     "SOC": {
         "type": "gauge",
     },
